@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Foodie — Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js"></script>
+</head>
+
+<body>
+
+  <!-- Header (same as home page) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="cartoon-image.jpg" alt="Foodie logo" class="logo-img">
+        <span>FoodieSpot</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="deals.html">Deals</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart (<span id="cart-count">(0)</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <main class="container">
+    <h1 class="page-title">Our Delicious Menu</h1>
+    <p class="muted">Tap “Add to Cart” to include your favorite dishes.</p>
+    <!-- cards here -->
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="broast.jpg" alt="Broast">
+        <h3>Broast</h3>
+        <p>Crispy fried chicken served with fries and sauce.</p>
+        <div class="price">Rs. 400</div>
+        <button class="add-to-cart" data-name="Broast" data-price="400">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="pizza marg.jpeg" alt="Margherita Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Classic cheese pizza with tomato sauce.</p>
+        <div class="price">Rs. 900</div>
+        <button class="add-to-cart" data-name="Margherita Pizza" data-price="900">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="crispy fries.webp" alt="Crispy Fries">
+        <h3>Crispy Fries</h3>
+        <p>Golden and crunchy potato fries.</p>
+        <div class="price">Rs. 250</div>
+        <button class="add-to-cart" data-name="Crispy Fries" data-price="250">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="club sandwich.jpg" alt="Club Sandwich">
+        <h3>Club Sandwich</h3>
+        <p>Grilled sandwich with layers of meat and veggies.</p>
+        <div class="price">Rs. 500</div>
+        <button class="add-to-cart" data-name="Club Sandwich" data-price="500">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="chicken cheese paratha.jpeg" alt="Chicken Cheese Paratha">
+        <h3>Chicken Cheese Paratha</h3>
+        <p>Hot & flaky paratha with chicken cheese goodness.</p>
+        <div class="price">Rs. 400</div>
+        <button class="add-to-cart" data-name="Chicken Cheese Paratha" data-price="400">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="cheese burger.jpg" alt="Cheese Burger">
+        <h3>Cheese Burger</h3>
+        <p>Juicy beef patty with melted cheese.</p>
+        <div class="price">Rs. 500</div>
+        <button class="add-to-cart" data-name="Cheese Burger" data-price="500">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="chow mein.jpeg" alt="Chicken Chowmein">
+        <h3>Chicken Chowmein</h3>
+        <p>Delicious stir-fried noodles with spicy chicken.</p>
+        <div class="price">Rs. 450</div>
+        <button class="add-to-cart" data-name="Chicken Chowmein" data-price="450">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="mayo roll.jpeg" alt="Mayo Roll">
+        <h3>Mayo Roll</h3>
+        <p>Soft paratha roll filled with spicy chicken and mayo.</p>
+        <div class="price">Rs. 300</div>
+        <button class="add-to-cart" data-name="Mayo Roll" data-price="300">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="nuggets.jpg" alt="Nuggets">
+        <h3>Nuggets</h3>
+        <p>Hot, crispy, juicy nuggets.</p>
+        <div class="price">Rs. 500</div>
+        <button class="add-to-cart" data-name="Nuggets" data-price="500">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="white-sauce-pasta.webp" alt="White Sauce Pasta">
+        <h3>White Sauce Pasta</h3>
+        <p>Rich, cheesy & creamy white sauce pasta.</p>
+        <div class="price">Rs. 700</div>
+        <button class="add-to-cart" data-name="White Sauce Pasta" data-price="700">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="fried-chicken-wings.jpg" alt="Fried Chicken Wings">
+        <h3>Fried Chicken Wings</h3>
+        <p>Crispy outside, tender inside-pure wings joy.</p>
+        <div class="price">Rs. 450</div>
+        <button class="add-to-cart" data-name="Fried Chicken Wings" data-price="450">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="chicken mozrella sticks.jpg" alt="Chicken Mozrella Sticks">
+        <h3>Chicken Mozrella Sticks</h3>
+        <p>melting cheese wrapped in crispy chicken goodness.</p>
+        <div class="price">Rs. 350</div>
+        <button class="add-to-cart" data-name="Chicken Mozrella sticks" data-price="350">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="aloo paratha.jpeg" alt="aloo paratha">
+        <h3>Aloo Paratha</h3>
+        <p>spicy and fluffy paratha filled with masala magic.</p>
+        <div class="price">Rs. 200</div>
+        <button class="add-to-cart" data-name="Aloo Paratha" data-price="200">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="beef burito.png" alt="Beef Burito">
+        <h3>Beef Burito</h3>
+        <p>A Beef Burito is a dish made with a warm flavour tortilla filled with seasoned ground or shredded beef and other ingredient like rice,beans and cheese.</p>
+        <div class="price">Rs. 600</div>
+        <button class="add-to-cart" data-name="Beef Burito" data-price="600">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="lazania.jpg" alt="Lazania">
+        <h3>Lazania</h3>
+        <p>layered with flavour, loaded with cheese.</p>
+        <div class="price">Rs. 700</div>
+        <button class="add-to-cart" data-name="Lazania" data-price="700">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="coca.jpeg" alt="Cold Drink">
+        <h3>Cold Drink</h3>
+        <p>Refreshing soft drink to complete your meal.</p>
+        <div class="price">Rs. 120</div>
+        <button class="add-to-cart" data-name="Cold Drink" data-price="120">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="zinger burger1 .png" alt="Zinger Burger">
+        <h3>Zinger Burger</h3>
+        <p>Zinger Burger is the flavorful, crispy chicken, which is juicy on the inside and crunchy on the outside, with a signature Zinger sauce.  .</p>
+        <div class="price">Rs. 500</div>
+        <button class="add-to-cart" data-name="zinger-burger" data-price="500">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="tikka pizza.png" alt="Tikka Pizza">
+        <h3>Tikka Pizza</h3>
+        <p>A flavorful and tender, essentially a boneless version of tandoori chicken..</p>
+        <div class="price">Rs. 800</div>
+        <button class="add-to-cart" data-name="Tikka Pizza" data-price="800">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+<!-- Back to Top Button -->
+ <button id="backToTop" class="back-to-top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container center small">
+      © FoodieSpot — All Rights Reserved
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
